@@ -9,3 +9,7 @@
 5. 执行脚本
 
 经过配置之后，以后只需要将图片放到todo目录下，执行脚本即可。
+
+pip install pyyaml
+pip install gitpython
+pip install pillow

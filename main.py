@@ -1,14 +1,19 @@
 import os
 import time
+import yaml
 from PIL import Image
 from git import Repo
 
-pic_dir = "./pic/"
-todo_dir = "./todo/"
-md_dir = "./this_time.md"
-git_url = "https://github.com/z16388/blog_pic/"
+f = open('./config.yml', encoding='utf-8')
+config = yaml.load(f)
+
+pic_dir = config['pic_dir']
+todo_dir = config['todo_dir']
+md_dir = config['md_dir']
+git_url = config['git_url']
+max_width = config['max_width']
+
 new_list = []
-max_width = 720
 
 def save_pic(img, to_file):
     if to_file.lower().endswith("png") == False:

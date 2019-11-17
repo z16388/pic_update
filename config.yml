@@ -1,0 +1,5 @@
+git_url: https://github.com/z16388/blog_pic/
+pic_dir: ./pic/
+todo_dir: ./todo/
+md_dir: ./this_time.md
+max_width: 720
